@@ -1,5 +1,33 @@
-h1 {
-    color: aquamarine;
-    font-size: larger;
+body{
+    margin:0;
+    padding:0;
+}
+
+
+#section1, #section2, #section3{
+    margin: 20px;
+    background-color: purple;
+    padding: 20px;
+
+    /* kind of controls the height */
+    font-size: 100px; 
 
 }
+
+
+@media (max-width: 1824px) {
+    #section1 {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #section2{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #section3{
+        padding: 10px;
+        margin: 10px;
+    }
+  }
