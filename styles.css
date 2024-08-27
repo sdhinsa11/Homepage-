@@ -12,6 +12,8 @@ body{
     /* kind of controls the height */
     font-size: 100px; 
 
+    /* do we need to make the div itself diagonal and then place it in that div? */
+
 }
 
 
@@ -30,4 +32,12 @@ body{
         padding: 10px;
         margin: 10px;
     }
+  }
+
+
+  #diagonal-box{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    transform: skewY(-11deg);
   }
