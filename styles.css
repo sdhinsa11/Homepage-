@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/* Section 1 */
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagonal-bg{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 300px;
+  transform: scaleY(1.8) skewY(-17deg);
+  background-color: rgb(38, 40, 71);
+  z-index: -1;
+}
+
+
+.image-container{
+  margin-top: 40px;
+  position:relative;
+
+  /* image positioning */
+  background-image: url("imgs/jellyfish.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 300px;
+  height: 550px;
+
+  margin: 20px;
+  /* padding: 20px; */
+
+  /* position name */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
+
+}
+
+h1{
+  color: azure;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.card{
+  max-width: 250px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.description{
+  font-size: 20px;
+
+}
+
+.header-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+h2{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.project-container{
+  display:grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.project{
+  display:flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  align-items: center;
+  box-shadow: 5px 5px 5px lightgray  ;
+
+}
+
+.project img{
+  width: 100%;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+}
+
+.project p{
+  width: 220px;
+}
+
+.title h4{
+  margin-right: 100px;
+}
+
+.project a{
+  margin: 5px;
+}
