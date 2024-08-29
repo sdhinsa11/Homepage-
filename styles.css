@@ -1,27 +1,63 @@
-body{
+body,html{
     margin:0;
     padding:0;
+    height:100%;
+    width:100%;
 }
 
+#section1{
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+}
 
-#section1, #section2, #section3{
+#diagonal-bg{
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-color: #40e0d0; 
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+  /* background-size: cover;
+  background-position: center;  */
+
+  /* background: linear-gradient(135deg, #3498db 50%, transparent 50%); */
+  background-size: cover; /* Keeps the background from repeating */
+  background-position: center; /* Keeps the angle centered */
+  pointer-events: none;
+  
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2; /* Ensure content is above the background */
+  padding: 20px;
+}
+
+#section2, #section3{
     margin: 20px;
     background-color: purple;
     padding: 20px;
 
-    /* kind of controls the height */
+    
     font-size: 100px; 
 
-    /* do we need to make the div itself diagonal and then place it in that div? */
-
+    
 }
 
 
+
+
 @media (max-width: 1824px) {
-    #section1 {
+    /* #section1 {
       padding: 10px;
       margin: 10px;
-    }
+    } */
 
     #section2{
         padding: 10px;
@@ -34,10 +70,3 @@ body{
     }
   }
 
-
-  #diagonal-box{
-    width: 50px;
-    height: 50px;
-    background-color: coral;
-    transform: skewY(-11deg);
-  }
