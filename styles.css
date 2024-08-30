@@ -112,3 +112,15 @@ h2{
 .project a{
   margin: 5px;
 }
+
+footer {
+  border: 1px solid black;
+  margin-top: 40px;
+  background-color: darkseagreen;
+}
+
+footer img{
+  margin-top: 20px;
+  padding:0px;
+  width: 100%;
+}
