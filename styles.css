@@ -116,11 +116,36 @@ h2{
 footer {
   border: 1px solid black;
   margin-top: 40px;
-  background-color: darkseagreen;
+  background-color: rgb(58, 69, 85);
+  color: antiquewhite;
+  width: 100%;
 }
 
+.under-contact, .first, .second{
+  width: 250px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.closing-info {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; 
+  align-items: center; 
+  text-align: left; /* Center the text inside each element */
+}
+
+.footer-links{
+  display: flex;
+  margin-bottom: 60px;
+  gap: 30px;
+  color: white;
+
+}
+
+
 footer img{
-  margin-top: 20px;
+  margin-top: 0px;
   padding:0px;
   width: 100%;
 }
